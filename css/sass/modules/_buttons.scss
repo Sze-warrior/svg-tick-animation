@@ -1,0 +1,25 @@
+.btn-default{
+    border: 2px solid $color-primary-green;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    max-width: 200px;
+    border-radius: 5px;
+    color: $color-primary-green;
+    @include transition(.2s);
+
+    p{
+    	margin: 0;
+    	font-weight: bold;
+    }
+
+    &:hover,&:focus{
+    	color: white;
+    	background-color: $color-primary-green;
+    	cursor: pointer;
+    	@include transition(.2s);
+    	outline: none;
+    }
+}
+

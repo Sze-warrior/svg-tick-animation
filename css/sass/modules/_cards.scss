@@ -1,0 +1,43 @@
+@import "../mixins/mixins.scss";
+
+.card-container{
+	max-width: $card-container;
+	min-height: 10px;
+    background: white;
+	@include border-radius(8px);
+	@include box-shadow();
+	display: block;
+    margin: 40px auto;
+}
+
+.card-banner{
+    width: 100%;
+    height: $card-banner-height;
+    background: $color-primary-green;
+    padding-top: 15px;
+    @include border-top-radius(8px);
+    margin-bottom: 25px;
+}
+
+.card-content{
+	
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+
+	.heading{
+		font-size: 28px;
+		font-weight: 300;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: $grid-gutter-width/2;
+	}
+}
+
+.card-btn-container{
+	padding-top: 10px;
+
+	a{
+		text-decoration: none;
+	}
+}

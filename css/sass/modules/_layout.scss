@@ -1,0 +1,19 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', Helvetica, Arial, sans-serif, times-new-roman;
+}
+
+.container{
+    max-width: $container-width;
+    display: block;
+    margin: 0 auto;
+    padding-left: $grid-gutter-width/4;
+    padding-right: $grid-gutter-width/4;
+}
+
+p{
+	line-height: $body-copy-line-height;
+	font-size: $body-copy-font;
+    margin: 0 0 20px;
+}
