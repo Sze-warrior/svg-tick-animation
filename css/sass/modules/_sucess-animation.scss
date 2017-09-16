@@ -8,7 +8,7 @@
 		stroke-dasharray: $animation-stroke-dash;
 		stroke-dashoffset: $animation-stroke-dash;
 		stroke-width: 2px;
-		animation: circle-border 3s linear forwards;
+		animation: tick-border-animate 3s linear forwards;
 		animation-delay: 0.5s; 
 	}
 
@@ -16,13 +16,13 @@
 		stroke-dasharray: $animation-stroke-dash;
 		stroke-dashoffset: $animation-stroke-dash;
 		stroke-width: 2px;
-		animation: dash 9s ease-out forwards;
+		animation: tick-animate 9s ease-out forwards;
 		animation-delay: 1s; 
 	}
 }
 
 
-@keyframes circle-border {
+@keyframes tick-border-animate {
 	from {
 		stroke-dashoffset: $animation-stroke-dash; 
 	}
@@ -32,7 +32,7 @@
 	} 
 }
 
-@keyframes dash {
+@keyframes tick-animate {
 	from {
 		stroke-dashoffset: $animation-stroke-dash; 
 	}

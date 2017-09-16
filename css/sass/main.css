@@ -1,35 +1,3 @@
-.tick-container {
-  width: 50px;
-  height: 50px;
-  display: block;
-  margin: 0 auto; }
-
-.tick-container .path-circle {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  stroke-width: 2px;
-  animation: circle-border 3s linear forwards;
-  animation-delay: 0.5s; }
-
-.tick-container .path-tick {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  stroke-width: 2px;
-  animation: dash 9s ease-out forwards;
-  animation-delay: 1s; }
-
-@keyframes circle-border {
-  from {
-    stroke-dashoffset: 1000; }
-  to {
-    stroke-dashoffset: 0; } }
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000; }
-  to {
-    stroke-dashoffset: 0; } }
-
 html, body {
   padding: 0;
   margin: 0;
@@ -46,6 +14,9 @@ p {
   line-height: 24px;
   font-size: 16px;
   margin: 0 0 20px; }
+
+a {
+  text-decoration: none; }
 
 .card-container {
   max-width: 450px;
@@ -79,19 +50,17 @@ p {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 35px; }
-
-.card-content .heading {
-  font-size: 28px;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px; }
+  .card-content .heading {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px; }
 
 .card-btn-container {
   padding-top: 10px; }
-
-.card-btn-container a {
-  text-decoration: none; }
+  .card-btn-container a {
+    text-decoration: none; }
 
 .btn-default {
   border: 2px solid #20b778;
@@ -106,17 +75,45 @@ p {
   -o-transition: 0.2s;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
+  .btn-default .btn-text {
+    margin: 0;
+    font-weight: bold; }
+  .btn-default:hover, .btn-default:focus {
+    color: white;
+    background-color: #20b778;
+    cursor: pointer;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none; }
 
-.btn-default p {
-  margin: 0;
-  font-weight: bold; }
+.tick-container {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto; }
+  .tick-container .path-circle {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 2px;
+    animation: tick-border-animate 3s linear forwards;
+    animation-delay: 0.5s; }
+  .tick-container .path-tick {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 2px;
+    animation: tick-animate 9s ease-out forwards;
+    animation-delay: 1s; }
 
-.btn-default:hover, .btn-default:focus {
-  color: white;
-  background-color: #20b778;
-  cursor: pointer;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  outline: none; }
+@keyframes tick-border-animate {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes tick-animate {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }

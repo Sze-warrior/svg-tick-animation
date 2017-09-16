@@ -9,12 +9,12 @@
     color: $color-primary-green;
     @include transition(.2s);
 
-    p{
+    .btn-text{
     	margin: 0;
     	font-weight: bold;
     }
 
-    &:hover,&:focus{
+    &:hover, &:focus{
     	color: white;
     	background-color: $color-primary-green;
     	cursor: pointer;
